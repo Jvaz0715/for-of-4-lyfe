@@ -2,6 +2,13 @@
  * YOUR CODE HERE *
  ******************/
 
+function addAll(arr) {
+  let sum = 0;
+  for (const value of arr) {
+    sum = sum + value;
+  }
+  return sum;
+}
 
 
 
