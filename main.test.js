@@ -2,6 +2,10 @@
  * YOUR CODE HERE *
  ******************/
 
+
+//General Looping problems
+
+// Write addAll function
 function addAll(arr) {
   let sum = 0;
   for (const value of arr) {
@@ -10,9 +14,26 @@ function addAll(arr) {
   return sum;
 }
 
+// Write countSpaces function
 
 
+// Write countTrues function
+// Write makeFriendly function
 
+
+// Maps-
+// returns the same number of items as in the original collection
+// with some items transformed
+
+// Write cubeAll function
+// Write addNoises function
+
+//Filters
+// returns the same number of items or fewer (usually fewer!)
+// with no items transformed
+
+// Write womenOnly function
+// Write integersOnly
 
 
 /*********************************
