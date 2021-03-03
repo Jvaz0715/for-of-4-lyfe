@@ -28,6 +28,16 @@ function countSpaces(string) {
 
 
 // Write countTrues function
+function countTrues(array) {
+  let numOfTrues = 0;
+  for(const trues of array) {
+    if (trues === true) {
+      numOfTrues++;
+    }
+  }
+  return numOfTrues;
+}
+
 // Write makeFriendly function
 
 
