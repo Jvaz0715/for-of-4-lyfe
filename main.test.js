@@ -56,13 +56,15 @@ function cubeAll(array) {
   return cubedNumbers;
 }
 
-
 // Write addNoises function
 
 //Filters
 // returns the same number of items or fewer (usually fewer!)
 // with no items transformed
 
+
+
+// Write womenOnly function
 function womenOnly(array) {
   let womenList = [];
   for (const person of array) {
@@ -73,8 +75,17 @@ function womenOnly(array) {
   return womenList;
 }
 
-// Write womenOnly function
 // Write integersOnly
+function integersOnly(array) {
+  let integersList = [];
+  for (const integer of array) {
+    if(integer % 1 === 0) {
+      integersList.push(integer);
+    }
+  }
+  return integersList;
+}
+
 
 
 /*********************************
