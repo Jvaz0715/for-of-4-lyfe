@@ -14,7 +14,17 @@ function addAll(arr) {
   return sum;
 }
 
+
 // Write countSpaces function
+function countSpaces(string) {
+  let whiteSpaces = 0;
+  for (const space of string) {
+    if (space === '') {
+      whiteSpaces++;
+    }
+  }
+  return whiteSpaces;
+}
 
 
 // Write countTrues function
