@@ -40,6 +40,17 @@ function countTrues(array) {
 
 // Write makeFriendly function
 
+//Can't seem to figure this one out as well
+function makeFriendly(array) {
+  let newParagraph;
+  for(const sentence of array) {
+    if (sentence.endsWith('.')) {
+      newParagraph.push(sentence.replace('.', '!'))
+    }
+  }
+  return newParagraph;
+}
+
 
 // Maps-
 // returns the same number of items as in the original collection
@@ -57,19 +68,16 @@ function cubeAll(array) {
 }
 
 // Write addNoises function
-
 // Can't seem to get appended noises
 function addNoises(array) {
-  let animalNoises = [];
+  let animalNoises= [];
   for(const animal of array) {
     if (animal === 'Fido' || animal === 'Rolph' || 'Maisie') {
-      animalNoises.push(animal + ' says "Woof!"')
-    }
-    if (animal === 'Garfield' || animal === 'Heathcliff') {
-      animalNoises.push(animal + ' says "Meow!"')
-    }
-    if (animal === 'Barnie' || animal === 'Sharp Tooth') {
-      animalNoises.push(animal + ' says "ROWR."')
+      animal.concat(' says "Woof!"')
+    } else if (animal === 'Garfield' || animal === 'Heathcliff') {
+      animal.concat(' says "Meow!"')
+    } else if (animal === 'Barnie' || animal === 'Sharp Tooth') {
+      animal.concat(' says "ROWR."')
     }
   }
   return animalNoises;
