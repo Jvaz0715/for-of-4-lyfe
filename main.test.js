@@ -58,6 +58,23 @@ function cubeAll(array) {
 
 // Write addNoises function
 
+// Can't seem to get appended noises
+function addNoises(array) {
+  let animalNoises = [];
+  for(const animal of array) {
+    if (animal === 'Fido' || animal === 'Rolph' || 'Maisie') {
+      animalNoises.push(animal + ' says "Woof!"')
+    }
+    if (animal === 'Garfield' || animal === 'Heathcliff') {
+      animalNoises.push(animal + ' says "Meow!"')
+    }
+    if (animal === 'Barnie' || animal === 'Sharp Tooth') {
+      animalNoises.push(animal + ' says "ROWR."')
+    }
+  }
+  return animalNoises;
+}
+
 //Filters
 // returns the same number of items or fewer (usually fewer!)
 // with no items transformed
@@ -205,7 +222,7 @@ describe('makeFriendly', () => {
   it(`given a paragraph, returns a paragraph where each sentence ends with an exclamation point instead of the period it held before.`, () => {
     const paragraph1 = `Do you see the story. Do you see anything. It seems to me I am trying to tell you a dream.`;
     const paragraph2 = `Like a running blaze on a plain, like a flash of lightning in the clouds. We live in the flicker.`;
-      const paragraph3 = `What is that feeling when you’re driving away from people and they recede on the plain till you see their specks dispersing. It’s the too-huge world vaulting us, and it’s good-bye. But we lean forward to the next crazy venture beneath the skies. Nothing behind me, everything ahead of me, as is ever so on the road.`;
+    const paragraph3 = `What is that feeling when you’re driving away from people and they recede on the plain till you see their specks dispersing. It’s the too-huge world vaulting us, and it’s good-bye. But we lean forward to the next crazy venture beneath the skies. Nothing behind me, everything ahead of me, as is ever so on the road.`;
 
     const friendly1 = `Do you see the story! Do you see anything! It seems to me I am trying to tell you a dream!`;
     const friendly2 = `Like a running blaze on a plain, like a flash of lightning in the clouds! We live in the flicker!`;
