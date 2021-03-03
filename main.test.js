@@ -19,7 +19,7 @@ function addAll(arr) {
 function countSpaces(string) {
   let whiteSpaces = 0;
   for (const space of string) {
-    if (space === '') {
+    if (space === ' ') {
       whiteSpaces++;
     }
   }
@@ -46,6 +46,17 @@ function countTrues(array) {
 // with some items transformed
 
 // Write cubeAll function
+
+function cubeAll(array) {
+  let cubedNumbers = [];
+
+  for (const value of array) {
+    cubedNumbers.push(value * value * value);
+  }
+  return cubedNumbers;
+}
+
+
 // Write addNoises function
 
 //Filters
