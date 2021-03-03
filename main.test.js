@@ -63,6 +63,16 @@ function cubeAll(array) {
 // returns the same number of items or fewer (usually fewer!)
 // with no items transformed
 
+function womenOnly(array) {
+  let womenList = [];
+  for (const person of array) {
+    if (person.endsWith('F') === true) {
+        womenList.push(person);
+    }
+  }
+  return womenList;
+}
+
 // Write womenOnly function
 // Write integersOnly
 
